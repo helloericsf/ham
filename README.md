@@ -179,6 +179,25 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 - Built with Swift and love for the developer community
 - Thanks to the LLM providers for their APIs
 
+## 🛠️ Development
+
+### Enhancement Progress
+Ham is actively being enhanced with new features. Check the development documentation:
+
+- **[Chunk Implementation Progress](CHUNK_IMPLEMENTATION_PROGRESS.md)** - Current development status and roadmap
+- **[Session Quick Start](SESSION_QUICK_START.md)** - Quick start guide for new development sessions
+- **[Enhancement Roadmap](ENHANCEMENT_ROADMAP.md)** - Complete feature roadmap and implementation plans
+
+### Current Status
+- ✅ **Chunk 1 Complete**: Enhanced Menu Statistics with rich analytics
+- 🚀 **Chunk 2 Ready**: Cost Calculations and budget tracking
+- 📊 **Active Features**: Real-time usage trends, provider breakdowns, activity metrics
+
+### Architecture
+- **Enhanced Analytics**: 90-day usage history with trend analysis
+- **Rich Menu System**: Professional menu bar interface with submenus
+- **Extensible Framework**: Ready for cost tracking and advanced features
+
 ## 📬 Contact
 
 - GitHub Issues: [Report bugs or request features](https://github.com/helloericsf/ham/issues)
