@@ -59,7 +59,47 @@ Ham needs your API keys to monitor token usage:
 2. Create an API key
 3. Add it to Ham settings
 
+## 📊 API Pricing (from development notes)
+
+*Note: The following prices are from development planning documents and may need verification. The unit "1K tokens" may be a typo for "1M tokens" for some models.*
+
+### Anthropic Claude
+- Claude 3.5 Sonnet: $3.00/$15.00 per 1K tokens (input/output)
+- Claude 3 Haiku: $0.25/$1.25 per 1K tokens
+
+### OpenAI
+- GPT-4 Turbo: $10.00/$30.00 per 1K tokens
+- GPT-3.5 Turbo: $1.50/$2.00 per 1K tokens
+
+### Google AI
+- Gemini Pro: $0.50/$1.50 per 1K tokens
+- Gemini Flash: $0.075/$0.30 per 1K tokens
+
 ## 🛠️ Development
+
+### Quick Start Commands
+
+```bash
+# Get set up in the project directory
+cd ham
+
+# Build and run the app to test current functionality.
+# The --rebuild flag cleans before building.
+./start_ham.sh --rebuild
+```
+
+### Key Files for Development
+
+The following files are key for implementing the next feature chunk (Cost Tracking).
+
+#### Files to Create
+- `Sources/Ham/CostCalculator.swift` - Core cost calculation engine
+- `Sources/Ham/PricingData.swift` - API model pricing database
+
+#### Files to Modify
+- `Sources/Ham/UsageAnalytics.swift` - Add cost fields and calculations
+- `Sources/Ham/MenuBarManager.swift` - Integrate cost display
+- `Sources/Ham/APIMonitor.swift` - Pass model info for cost calculation
 
 ### Project Structure
 
@@ -179,24 +219,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 - Built with Swift and love for the developer community
 - Thanks to the LLM providers for their APIs
 
-## 🛠️ Development
 
-### Enhancement Progress
-Ham is actively being enhanced with new features. Check the development documentation:
-
-- **[Chunk Implementation Progress](CHUNK_IMPLEMENTATION_PROGRESS.md)** - Current development status and roadmap
-- **[Session Quick Start](SESSION_QUICK_START.md)** - Quick start guide for new development sessions
-- **[Enhancement Roadmap](ENHANCEMENT_ROADMAP.md)** - Complete feature roadmap and implementation plans
-
-### Current Status
-- ✅ **Chunk 1 Complete**: Enhanced Menu Statistics with rich analytics
-- 🚀 **Chunk 2 Ready**: Cost Calculations and budget tracking
-- 📊 **Active Features**: Real-time usage trends, provider breakdowns, activity metrics
-
-### Architecture
-- **Enhanced Analytics**: 90-day usage history with trend analysis
-- **Rich Menu System**: Professional menu bar interface with submenus
-- **Extensible Framework**: Ready for cost tracking and advanced features
 
 ## 📬 Contact
 
